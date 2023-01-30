@@ -8,6 +8,7 @@ $tagLineHeight: 8px;
   border-style: solid;
   border-radius: 0.6em;
   margin: 3px;
+  text-align: center;
   &.line {
     border-width: ($tagLineHeight / 2);
     width: $tagLineWidth;
@@ -61,7 +62,11 @@ $tagLineHeight: 8px;
 .ga-tags {
   width: 100%;
   display: inline-flex;
+  flex-wrap: wrap;
   overflow-x: auto;
+  .ga-tag {
+    min-width: 50px;
+  }
   &.tagMap {
     flex-wrap: wrap;
   }

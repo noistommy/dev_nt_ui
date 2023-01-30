@@ -12,7 +12,6 @@ const setOption = modalOption => {
 }
 
 const init = () => {
-  console.log('init')
   const emitter = mitt()
   const show = ({ comp, props, options, handler }) => {
     emitter.emit('show-modal', { comp, props, options, handler })

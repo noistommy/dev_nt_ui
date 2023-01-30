@@ -28,8 +28,7 @@
 .page-contents-body {
   position: relative;
   max-width: 1024px;
-  margin-left: 3em;
-  margin-right: 300px;
+  margin: 0 3em;
   padding: 2em 0 7em;
   .page-contents-title {
     margin-bottom: 50px;

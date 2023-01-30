@@ -1,5 +1,6 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { createRouter, createWebHashHistory } from 'vue-router'
+import MainView from '../views/MainView';
+// import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import NotFound from '../components/404.vue'
 
@@ -7,7 +8,7 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: MainView
   },
   {
     path: '/about',
@@ -176,8 +177,12 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes
+  // history: createWebHistory(process.env.BASE_URL),
+  history: createWebHashHistory(),
+  scrollBehavior () {
+    return { x: 0, y: 0 }
+  },
+  routes,
 })
 
 export default router

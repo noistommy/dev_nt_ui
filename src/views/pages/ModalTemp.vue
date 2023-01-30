@@ -85,4 +85,5 @@ function showConfirm() {
   border-top: 1px solid #d6d6d6;
   margin: 1em 0 2em;
 }
+
 </style>

@@ -62,7 +62,7 @@ onUnmounted(() => {
           </div>
         </div>
         <div class="section-body">
-          <GaSelectBox v-model="selectedOption" :option-list="options"  />
+          <GaSelectBox v-model="selectedOption" :option-list="options" :visible="true"  />
         </div>
       </section>
       <section>

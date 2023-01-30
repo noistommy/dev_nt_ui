@@ -1,7 +1,7 @@
 //$inputPadding: 8px 11px;
 .ga-input {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
   //display: flex;
   //vertical-align: middle;
   max-width: 100%;
@@ -185,7 +185,6 @@
     }
   }
   &.labeled {
-    display: inline-flex;
     label, .label {
       //font-family: $fontNameKr;
       display: flex;
@@ -202,7 +201,6 @@
     }
   }
   &.button, &.labeled {
-    display: inline-flex;
     input, .ga-button, label, .label {
       border-radius: 0;
     }

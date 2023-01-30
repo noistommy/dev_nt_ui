@@ -175,45 +175,45 @@ h5,.h5 {font-size: $h5;}
 //.attention{background-color:$attention;}
 //.importance{background-color:$importance;}
 //.info{background-color:$secondary;}
-
- * {
-     // ----- FireFox -----
-     // scrollbar-color: <막대 색상> <트랙 색상>
-     // scrollbar-width: thin | none | auto
-     scrollbar-color: $thumbBackground $trackBackground;
-     scrollbar-width: thin;
-
-     // ----- Internet Explorer -----
-     // scrollbar-face-color: <막대 색상>
-     // scrollbar-track-color: <트랙 색상>
-     // scrollbar-arrow-color: <양 끝 화살표 색상>
-     scrollbar-face-color: $thumbBackground;
-     scrollbar-track-color: $trackBackground;
-     scrollbar-arrow-color: #f1f1f1;
-     // ----- Webkit(Chrome, Edge, Safari) -----
-     &::-webkit-scrollbar{
-         // 스크롤바의 크기를 정의합니다.
-         // (width - 세로 스크롤 두께) (height - 가로 스크롤 두께)
-         width: $customScrollbarWidth+px;
-         height: $customScrollbarHeight+px;
-     }
-     &::-webkit-scrollbar-thumb{
-         // 스크롤바의 막대 색상을 정의합니다.
-         background-color: $trackBackground;
-         border-radius: $thumbBorderRadius+px;
-         border:$thumbBorderWidth+px solid $thumbBorderColor;
-     }
-     &:hover::-webkit-scrollbar-thumb {
-         background-color: $thumbBackground;
-     }
-     &::-webkit-scrollbar-track{
-         // 스크롤바의 트랙 색상을 정의합니다.
-         background-color: $trackBackground;
-     }
- //     &::-webkit-scrollbar-button{
- //         // 스크롤바의 버튼 색상을 정의합니다.
- //     }
- }
+//
+// * {
+//     // ----- FireFox -----
+//     // scrollbar-color: <막대 색상> <트랙 색상>
+//     // scrollbar-width: thin | none | auto
+//     scrollbar-color: $thumbBackground $trackBackground;
+//     scrollbar-width: thin;
+//
+//     // ----- Internet Explorer -----
+//     // scrollbar-face-color: <막대 색상>
+//     // scrollbar-track-color: <트랙 색상>
+//     // scrollbar-arrow-color: <양 끝 화살표 색상>
+//     scrollbar-face-color: $thumbBackground;
+//     scrollbar-track-color: $trackBackground;
+//     scrollbar-arrow-color: #f1f1f1;
+//     // ----- Webkit(Chrome, Edge, Safari) -----
+//     &::-webkit-scrollbar{
+//         // 스크롤바의 크기를 정의합니다.
+//         // (width - 세로 스크롤 두께) (height - 가로 스크롤 두께)
+//         width: $customScrollbarWidth+px;
+//         height: $customScrollbarHeight+px;
+//     }
+//     &::-webkit-scrollbar-thumb{
+//         // 스크롤바의 막대 색상을 정의합니다.
+//         background-color: $trackBackground;
+//         border-radius: $thumbBorderRadius+px;
+//         border:$thumbBorderWidth+px solid $thumbBorderColor;
+//     }
+//     &:hover::-webkit-scrollbar-thumb {
+//         background-color: $thumbBackground;
+//     }
+//     &::-webkit-scrollbar-track{
+//         // 스크롤바의 트랙 색상을 정의합니다.
+//         background-color: $trackBackground;
+//     }
+// //     &::-webkit-scrollbar-button{
+// //         // 스크롤바의 버튼 색상을 정의합니다.
+// //     }
+// }
 
  //.dark-mode {
  //    //* {

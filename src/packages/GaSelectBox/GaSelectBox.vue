@@ -47,6 +47,10 @@ export default {
       type: String,
       default: 'Select Item'
     },
+    visible: {
+      type: Boolean,
+      default: false
+    },
     optionList: Array,
     currentValue: [Number, String],
     keyName: String,
@@ -137,7 +141,7 @@ export default {
   created() {
     this.current = this.currentValue;
     this.current = this.modelValue
-
+    this.isOpen = this.visible
   },
   mounted() {
     document.addEventListener('click', () => this.showMenu(false))

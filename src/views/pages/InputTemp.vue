@@ -34,7 +34,6 @@ const title = '텍스트 입력'
       </div>
       <div class="section-body">
        <div class="ga-input">
-        <label>Label</label>
          <input type="text" placeholder="텍스트 입력">
        </div>
       </div>

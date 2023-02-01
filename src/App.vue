@@ -59,7 +59,9 @@ function selectMenu(target) {
       <div class="side-navigation">
         <header>
           <div class="main-title">
-            <h1 class="title">GA UI COMPONENT</h1>
+            <h1 class="title">
+              <router-link :to="{ name: 'home' }">GA UI COMPONENT</router-link>
+            </h1>
           </div>
           <div class="wave-wrapper">
             <WavesSvg />
@@ -67,7 +69,7 @@ function selectMenu(target) {
         </header>
         <div class="lnb-body">
           <div class="ga-list selection">
-            <router-link :to="{ name: 'home' }" class="item" :class="{active: activeMenu === 'home'}" @click="selectMenu('home')">HOME</router-link>
+<!--            <router-link :to="{ name: 'home' }" class="item" :class="{active: activeMenu === 'home'}" @click="selectMenu('home')">HOME</router-link>-->
             <!--          <router-link :to="{ name: 'about' }" class="item" :class="{active: activeMenu === 'about'}" @click="selectMenu('about')">ABOUT</router-link>-->
             <div class="header-item item">Foundation</div>
             <template v-for="item in baseList" :key="item.name">
@@ -128,21 +130,21 @@ header {
     height: 100vh;
     overflow-y: auto;
   }
-  &.home {
-
-    .menu {
-      position: relative;
-      transition: width 500ms ease;
-      width: 0;
-      .side-navigation {
-        position: absolute;
-        right: 0;
-      }
-    }
-    .contents {
-      background-color: var(--bgc);
-    }
-  }
+  //&.home {
+  //
+  //  .menu {
+  //    position: relative;
+  //    transition: width 500ms ease;
+  //    width: 0;
+  //    .side-navigation {
+  //      position: absolute;
+  //      right: 0;
+  //    }
+  //  }
+  //  .contents {
+  //    background-color: var(--bgc);
+  //  }
+  //}
   .btn-menu {
     position: fixed;
     padding: 10px;

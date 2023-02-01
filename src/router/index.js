@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import MainView from '../views/MainView';
+// import MainView from '../views/MainView';
 // import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import NotFound from '../components/404.vue'
@@ -8,7 +8,7 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: MainView
+    component: () => { return import(`../views/pages/TypographyTemp`) },
   },
   {
     path: '/about',
@@ -19,6 +19,12 @@ const routes = [
     path: '/page',
     name: 'page',
     component: () => { return import(`../views/PageView`) },
+    props: true
+  },
+  {
+    path: '/designToken',
+    name: 'DesignToken',
+    component: () => { return import(`../views/pages/DesignTokenTemp`) },
     props: true
   },
   {

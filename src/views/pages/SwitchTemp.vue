@@ -19,6 +19,33 @@ const switchValueT = ref('Y')
       <span class="ga-tag label purple">vue 3.0</span>
     </div>
   </template>
+  <template #usage>
+    <div class="ga-card attached">
+      <h3>스위치</h3>
+      <div class="footer">
+        <div class="ga-list code">
+          <div class="item secondary-text">// GaSwitch - 기본</div>
+          <div class="item">const data = (true || false)</div>
+          <div class="item" v-text="`<GaSwaich v-model='data' />`"></div>
+          <div class="item secondary-text">// GaSwitch - round</div>
+          <div class="item" v-text="`<GaSwaich v-model='data' round='true | false' />`"></div>
+          <div class="item secondary-text">// GaSwitch - type</div>
+          <div class="item" v-text="`<GaSwaich v-model='data' type='true | false' />`"></div>
+          <div class="item secondary-text">// GaSwitch - reverse</div>
+          <div class="item" v-text="`<GaSwaich v-model='data' reverse='true | false' />`"></div>
+          <div class="item secondary-text">// GaSwitch - type</div>
+          <div class="item" v-text="`<GaSwaich v-model='data' type='button | null' />`"></div>
+          <div class="item secondary-text">// GaSwitch - 결과 지정</div>
+          <div class="item" v-text="`<GaSwaich v-model='data' on-value='Y' off-value='N' />`"></div>
+          <div class="item secondary-text">// GaSwitch - 사용자 라벨</div>
+          <div class="item" v-text="`<GaSwaich v-model='data' >`"></div>
+          <div class="item depth-1" v-text="`    <template v-slot:on>사용</template>`"></div>
+          <div class="item depth-1" v-text="`    <template v-slot:off>사용안함</template>`"></div>
+          <div class="item" v-text="`</GaSwaich>`"></div>
+        </div>
+      </div>
+    </div>
+  </template>
   <template #body>
     <section>
       <div class="section-header">

@@ -42,6 +42,13 @@ function showConfirm() {
       <span class="ga-tag label purple">vue 3.0</span>
     </div>
   </template>
+  <template #usage>
+    <div class="ga-card attached">
+      <h3>모달</h3>
+      <div class="footer">
+      </div>
+    </div>
+  </template>
   <template #body>
     <section>
       <div class="section-header">

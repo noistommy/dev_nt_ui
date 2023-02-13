@@ -55,7 +55,7 @@
     }
     &.divide {
       @for $i from 1 through $gridWhole {
-        &-#{$i} > .column{width: 100% / $i}
+        &-#{$i} > .column{width: calc(100% / $i)}
       }
     }
   }

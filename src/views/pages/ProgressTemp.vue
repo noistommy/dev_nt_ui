@@ -61,6 +61,7 @@ const gauge = ref({
     <div class="main-title">{{ title }}</div>
     <div class="section-tags">
       <span class="ga-tag label teal">ga-ui-css</span>
+      <span class="ga-tag label purple">vue 3.0</span>
     </div>
   </template>
   <template #body>

@@ -73,6 +73,15 @@ h5,.h5 {font-size: $h5;}
     &.darker {
         background-color:$darkerPrimary;
     }
+    &-text {
+        color: $primary;
+    }
+    &-bg {
+        background-color: $primary;
+    }
+    &-border {
+        border-color: $primary !important;
+    }
 }
 .secondary {
     color: $secondaryText;
@@ -83,6 +92,15 @@ h5,.h5 {font-size: $h5;}
     }
     &.darker {
         background-color: $darkerSecondary;
+    }
+    &-text {
+        color: $secondary;
+    }
+    &-bg {
+        background-color: $secondary;
+    }
+    &-border {
+        border-color: $secondary !important;
     }
 }
 .surface {
@@ -146,6 +164,7 @@ h5,.h5 {font-size: $h5;}
 }
 
 @each $color, $value in $stateColors {
+    .#{$color},
     .ga-#{$color} {
         background-color: nth($value, 1) !important;
         color: $white !important;

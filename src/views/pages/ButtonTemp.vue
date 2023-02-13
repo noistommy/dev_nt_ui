@@ -43,6 +43,12 @@ const selectedButton2 = ref('재생')
         <div class="section-body">
           <button class="ga-button">기본 버튼</button>
         </div>
+<!--        <pre>-->
+<!--          <code class="language-markup">-->
+<!--            <span v-text="`<button class='ga-button'>기본 버튼</button>`"></span>-->
+<!--            <span v-text="`    <button class='ga-button'>기본 버튼</button>`"></span>-->
+<!--          </code>-->
+<!--        </pre>-->
       </section>
       <section>
         <div class="section-header">

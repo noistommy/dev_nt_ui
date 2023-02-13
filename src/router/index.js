@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-// import MainView from '../views/MainView';
+import MainView from '../views/MainView';
 // import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import NotFound from '../components/404.vue'
@@ -8,7 +8,8 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => { return import(`../views/pages/TypographyTemp`) },
+    // component: () => { return import(`../views/pages/TypographyTemp`) },
+    component: MainView,
   },
   {
     path: '/about',

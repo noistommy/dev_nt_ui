@@ -139,6 +139,34 @@ const pColors = COLOR_PALETTE
           <div class="label">테두리</div>
         </div>
       </div>
+      <div class="section-body">
+        <div class="color-chip primary text">
+          <div class="label">기본</div>
+        </div>
+        <div class="color-chip primary-text text">
+          <div class="label">글자색</div>
+        </div>
+        <div class="color-chip primary-bg text">
+          <div class="label">배경</div>
+        </div>
+        <div class="color-chip primary-border text">
+          <div class="label">테두리</div>
+        </div>
+      </div>
+      <div class="section-body">
+        <div class="color-chip secondary text">
+          <div class="label">기본</div>
+        </div>
+        <div class="color-chip secondary-text text">
+          <div class="label">글자색</div>
+        </div>
+        <div class="color-chip secondary-bg text">
+          <div class="label">배경</div>
+        </div>
+        <div class="color-chip secondary-border text">
+          <div class="label">테두리</div>
+        </div>
+      </div>
     </section>
     <section>
       <div class="section-header">

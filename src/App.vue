@@ -1,8 +1,18 @@
 <script setup>
 import WavesSvg from '@/components/WavesSvg'
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import GaTeleport from "@/packages/GaTeleport/GaTeleport";
+
+// target ref 지정
+const root = ref(null)
+// route 데이터 사용 목적
+const route = useRoute()
+// watch route로 페이지 변경 감지
+// cb: scroll 초기화
+watch(route, () => {
+      root.value.scrollTop = 0
+})
 
 const current = computed(() => {
   return useRoute().name
@@ -91,7 +101,7 @@ function selectMenu(target) {
         </div>
       </div>
     </div>
-    <div class="right-side contents">
+    <div class="right-side contents" ref="root">
       <router-view/>
     </div>
   </div>

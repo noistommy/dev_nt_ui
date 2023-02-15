@@ -66,7 +66,7 @@ const structure = ref({
       <GaTreeList :tree-data="structure" :level="0"  />
       <div class="footer">
         <div class="ga-list ul hyphen">
-          <div class="item"><strong>gulpFile.babel.js</strong> : Gulp 사용해 개발중 scss 변화를 확인하고 동시에. 빌드된 css 파일을 생성함.</div>
+          <div class="item"><strong>gulpFile.babel.js</strong> : 개발 중 scss 변화를 확인하고 동시에. 빌드된 css 파일을 생성함.</div>
           <div class="item"><strong>src</strong> 폴더: ga ui scss 파일, ui component 파일, 예제 페이지를 포함한다</div>
           <div class="item"><strong>assets</strong> 폴더: 스타일 관련 파일 빝 빌드된 css 파일 output 포함함</div>
           <div class="item"><strong>packages</strong> 폴더: ga ui component 및 plugin 파일 포함함</div>

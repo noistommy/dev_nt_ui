@@ -24,6 +24,7 @@ const baseList = [
   { name: 'typography', title: '타이포그래피' },
   { name: 'color', title: '색상' },
   { name: 'grid', title: '그리드 시스템' },
+  { name: 'form', title: '폼 시스템' },
 ]
 const elementList = [
   { name: 'button', title: '버튼' },

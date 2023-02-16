@@ -47,6 +47,12 @@ const routes = [
     props: true
   },
   {
+    path: '/foundation/form',
+    name: 'form',
+    component: () => { return import(`../views/pages/FormTemp`) },
+    props: true
+  },
+  {
     path: '/element/button',
     name: 'button',
     component: () => { return import(`../views/pages/ButtonTemp`) },
